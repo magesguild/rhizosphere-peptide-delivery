@@ -11,7 +11,7 @@
 
 Large macromolecular therapeutic peptides (2–4 kDa, such as insulin, semaglutide, and GLP-1 analogues) face a severe oral bioavailability bottleneck (<1–2%) caused by the intestinal epithelial barrier: tightly cross-linked extracellular calcium ($Ca^{2+}$) cadherin junctions and rigid, liquid-ordered ($L_o$) lipid packing on enterocyte apical membranes.
 
-This open white paper proposes a bio-inspired, tri-component oral delivery formulation derived from the rhizosphere contact mechanics of *Leucocoprinus cepistipes* (Brother Mushroom) in calcium-saturated Cretaceous smectite clay:
+This open white paper proposes a bio-inspired, tri-component oral delivery formulation derived from the rhizosphere contact mechanics of the Onion-Stalked Lepiota (\textit{Leucocoprinus cepistipes}) in calcium-saturated Cretaceous smectite clay:
 
 1. **Component A (Calcium De-Stapling Shuttle):** Sodium D-Saccharate (2.5 mM) — temporarily decouples $Ca^{2+}$ electrostatic cross-links without mucosal stripping.
 2. **Component B (Membrane Phase Fluidizer):** Fungal Sophorolipid (0.75 mg/mL) — non-ionic biosurfactant inducing a reversible liquid-ordered ($L_o$) to fluid-disordered ($L_d$) bilayer phase transition.
