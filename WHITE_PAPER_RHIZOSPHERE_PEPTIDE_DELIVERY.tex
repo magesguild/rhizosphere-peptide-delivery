@@ -10,12 +10,13 @@
 \usepackage{hyperref}
 \usepackage{enumitem}
 \usepackage{tcolorbox}
-\usepackage{graphicx}
+\usepackage{colortbl}
 
 \definecolor{mgpblue}{RGB}{20,40,75}
 \definecolor{mgpgold}{RGB}{180,130,10}
 \definecolor{mgpgreen}{RGB}{34,139,34}
 \definecolor{mgpgray}{RGB}{90,100,110}
+\definecolor{tableheader}{RGB}{235,240,248}
 
 \hypersetup{
     colorlinks=true,
@@ -35,17 +36,21 @@
 \titleformat{\section}{\color{mgpblue}\normalfont\large\bfseries}{\thesection}{1em}{}[\titlerule]
 \titleformat{\subsection}{\color{mgpgold}\normalfont\normalsize\bfseries}{\thesubsection}{1em}{}
 
-\title{\LARGE \textbf{\color{mgpblue} The Rhizosphere Matrix: Bio-Inspired Reversible Epithelial Permeation for Macromolecular Oral Peptide Delivery}\\[0.2cm]
-\large \textit{\color{mgpgold} A Phase-Space Contact Mechanics Formulation Inspired by Leucocoprinus cepistipes}}
+\title{
+    \vspace{-0.5cm}
+    {\LARGE \textbf{\color{mgpblue} The Rhizosphere Matrix: Bio-Inspired Reversible Epithelial Permeation for Macromolecular Oral Peptide Delivery}}\\[0.25cm]
+    {\large \textit{\color{mgpgold} A Phase-Space Contact Mechanics Formulation Inspired by Leucocoprinus cepistipes}}
+}
 
 \author{
-    \textbf{David Allen Hayden}\thanks{Founder, Managing Member \& Chief Architect, Mage's Guild Psychonautics LLC. Email: \href{mailto:dhayden@magesguild.io}{dhayden@magesguild.io}} \quad\and\quad
-    \textbf{Urania Ephemera}\thanks{Co-Architect \& Living Muse, Mage's Guild Psychonautics LLC. Email: \href{mailto:urania@magesguild.io}{urania@magesguild.io}}\\[0.2cm]
-    \normalsize \textit{Mage's Guild Psychonautics LLC} \\
+    \textbf{David Allen Hayden}\thanks{Founder, Managing Member \& Chief Architect, Mage's Guild Psychonautics LLC. Email: \href{mailto:dhayden@magesguild.io}{dhayden@magesguild.io}} 
+    \quad\quad\quad\quad
+    \textbf{Urania Ephemera}\thanks{Co-Architect \& Living Muse, Mage's Guild Psychonautics LLC. Email: \href{mailto:urania@magesguild.io}{urania@magesguild.io}}\\[0.25cm]
+    \normalsize Mage's Guild Psychonautics LLC\\[0.05cm]
     \normalsize Universal City, Texas, USA
 }
 
-\date{November 6, 2026}
+\date{\small November 6, 2026}
 
 \begin{document}
 
@@ -58,7 +63,7 @@
 
 \begin{abstract}
 \noindent
-Oral delivery of therapeutic macromolecular peptides ($2\text{--}4\text{ kDa}$, e.g., insulin, semaglutide, GLP-1 analogues) remains one of the premier challenges in pharmacology, constrained by a strict $\le 1\text{--}2\%$ oral bioavailability ceiling. This barrier is enforced by two biological gatekeepers: (1) extracellular calcium-stapled ($Ca^{2+}$) cadherin tight junctions, and (2) rigid, liquid-ordered ($L_o$) lipid packing on apical enterocyte membranes. Here, we present an open-source biophysical formulation derived from the rhizosphere contact mechanics of \textit{Leucocoprinus cepistipes} in calcium-saturated smectite clay. The formulation combines: (A) a dicarboxylate calcium shuttle (\textit{Sodium D-Saccharate}, 2.50~mM) for non-cytotoxic bridge de-stapling; (B) an amphiphilic fungal glycolipid (\textit{Sophorolipid}, 0.75~mg/mL) inducing a reversible liquid-ordered ($L_o$) to fluid-disordered ($L_d$) bilayer transition; and (C) a triterpenoid decoy (\textit{Betulinic Acid}, 0.10~mM) reversibly modulating P-glycoprotein (ABCB1) efflux. In-silico phase-space simulations conducted under \textbf{CODENAME PRISM} demonstrate a $>24\times$ increase in apparent permeability ($P_{\text{app}}$), achieving $>28\%$ predicted bioavailability across an epithelial monolayer with 100\% reversible barrier re-sealing at $T = 90\text{--}120$~minutes and $<1.4\%$ membrane strain. We provide complete stoichiometric ratios, enteric encapsulation guidelines, and a step-by-step wet-lab verification protocol (Caco-2/HT29-MTX, TEER, Ussing chambers) for independent laboratory evaluation.
+Oral delivery of therapeutic macromolecular peptides ($2\text{--}4\text{ kDa}$, e.g., insulin, semaglutide, GLP-1 analogues) remains one of the premier challenges in pharmacology, constrained by a strict $\le 1\text{--}2\%$ oral bioavailability ceiling. This barrier is enforced by two biological gatekeepers: (1) extracellular calcium-stapled ($Ca^{2+}$) cadherin tight junctions, and (2) rigid, liquid-ordered ($L_o$) lipid packing on apical enterocyte membranes. Here, we present an open-source biophysical formulation derived from the rhizosphere contact mechanics of the Onion-Stalked Lepiota (\textit{Leucocoprinus cepistipes}) in calcium-saturated smectite clay. The formulation combines: (A) a dicarboxylate calcium shuttle (\textit{Sodium D-Saccharate}, 2.50~mM) for non-cytotoxic bridge de-stapling; (B) an amphiphilic fungal glycolipid (\textit{Sophorolipid}, 0.75~mg/mL) inducing a reversible liquid-ordered ($L_o$) to fluid-disordered ($L_d$) bilayer transition; and (C) a triterpenoid decoy (\textit{Betulinic Acid}, 0.10~mM) reversibly modulating P-glycoprotein (ABCB1) efflux. In-silico phase-space simulations conducted under \textbf{CODENAME PRISM} demonstrate a $>24\times$ increase in apparent permeability ($P_{\text{app}}$), achieving $>28\%$ predicted bioavailability across an epithelial monolayer with 100\% reversible barrier re-sealing at $T = 90\text{--}120$~minutes and $<1.4\%$ membrane strain. We provide complete stoichiometric ratios, enteric encapsulation guidelines, and a step-by-step wet-lab verification protocol (Caco-2/HT29-MTX, TEER, Ussing chambers) for independent laboratory evaluation.
 \end{abstract}
 
 \noindent \textbf{Keywords:} Oral Peptide Delivery, Bioavailability, Tight Junctions, Lipid Bilayer Phase Transition, Sophorolipid, Calcium Chelation, S-Saccharate, Project PRISM.
@@ -75,7 +80,7 @@ Subcutaneous injection remains the standard clinical administration route for ov
 
 Existing clinical permeation enhancers (such as Sodium Caprate / $C_{10}$ or SNAC / Sodium Salcaprozate) rely on high surfactant concentrations that cause non-specific membrane disruption, low bioavailability ($0.5\text{--}1.5\%$), and high pharmacokinetic variability. A bio-inspired, fully reversible, and non-cytotoxic mechanism is urgently required.
 
-\section{The Biological Soil Analogy: \\ The Onion-Stalked Lepiota (\textit{Leucocoprinus cepistipes})}
+\section{The Biological Soil Analogy: The Onion-Stalked Lepiota}
 
 The physical mechanism proposed herein originated from direct natural observation of the Onion-Stalked Lepiota (\textit{Leucocoprinus cepistipes}) thriving in alkaline, calcium-rich Cretaceous Houston Black clay. 
 
@@ -95,20 +100,24 @@ We mapped this exact rhizosphere contact mechanic to the lipid headgroups and ca
 \begin{tcolorbox}[colback=white,colframe=mgpblue,title=\textbf{Figure 1: Pharmacokinetic Tri-Component Permeation Timeline ($T = 0 \text{ to } 180\text{ min}$)},fonttitle=\small\bfseries]
 \centering
 \small
-\begin{tabularx}{\textwidth}{lXXl}
-\toprule
+\begin{tabularx}{\textwidth}{|l|X|X|l|}
+\hline
+\rowcolor{tableheader}
 \textbf{Phase / Time} & \textbf{Biophysical Epithelial State} & \textbf{Drug Permeation Dynamics} & \textbf{Safety \& Membrane State} \\
-\midrule
-\textbf{Phase 0 ($T = 0\text{--}15\text{ min}$)} & Enteric dissolution in proximal jejunum (pH $\ge 6.2$). & Zero leakage; $P_{\text{app}}$ baseline ($1.2\times 10^{-7}\text{ cm/s}$). & TEER $= 1145\ \Omega\cdot\text{cm}^2$; $L_o$ Gel Phase. \\
+\hline
+\textbf{Phase 0 ($T = 0\text{--}15\text{ min}$)} & Enteric dissolution in proximal jejunum (pH $\ge 6.2$). & Zero leakage; baseline $P_{\text{app}}$ ($1.2\times 10^{-7}\text{ cm/s}$). & TEER $= 1145\ \Omega\cdot\text{cm}^2$; $L_o$ Gel Phase. \\
+\hline
 \textbf{Phase 1 ($T = 15\text{--}60\text{ min}$)} & $Ca^{2+}$ de-stapled; bilayer relaxes from $L_o \rightarrow L_d$. & \textbf{Active absorption window ($>24\times$ flux surge).} & TEER drops to $726\ \Omega\cdot\text{cm}^2$; zero cell lysis. \\
+\hline
 \textbf{Phase 2 ($T = 60\text{--}90\text{ min}$)} & Saccharate and sophorolipid metabolically clear. & Absorption window begins steady closure. & TEER recovers to $1016\ \Omega\cdot\text{cm}^2$; $L_o$ re-gelling. \\
+\hline
 \textbf{Phase 3 ($T = 90\text{--}180\text{ min}$)} & Ambient $Ca^{2+}$ re-crosslinks cadherins completely. & \textbf{100\% Barrier restoration; zero ongoing leak.} & \textbf{TEER $= 1209\ \Omega\cdot\text{cm}^2$; $<1.4\%$ LDH strain.} \\
-\bottomrule
+\hline
 \end{tabularx}
 \end{tcolorbox}
 \end{figure*}
 
-\subsection{Component A: Calcium Shuttle \\ (Sodium D-Saccharate / D-Glucarate)}
+\subsection{Component A: Calcium Shuttle (Sodium D-Saccharate)}
 \begin{itemize}[noitemsep]
     \item \textbf{CAS No.:} 526-99-8 (or 526-94-3)
     \item \textbf{Role:} Bidentate dicarboxylate chelation shuttle.
@@ -116,14 +125,14 @@ We mapped this exact rhizosphere contact mechanic to the lipid headgroups and ca
     \item \textbf{Mechanism:} Competes with polar phosphate headgroups and cadherin $EC1\text{--}EC2$ linker domains for $Ca^{2+}$, lowering transepithelial electrical resistance (TEER) reversibly.
 \end{itemize}
 
-\subsection{Component B: Fungal Bilayer Fluidizer \\ (Acidic / Lactonic Sophorolipids)}
+\subsection{Component B: Fungal Bilayer Fluidizer (Sophorolipids)}
 \begin{itemize}[noitemsep]
     \item \textbf{Structure:} Hydroxy fatty acid linked to a sophorose disaccharide unit derived from non-pathogenic fungal fermentation (\textit{Starmerella bombicola}).
     \item \textbf{Working Concentration:} $0.50\text{--}1.00\text{ mg/mL}$ ($50\text{--}100\text{ mg}$ per tablet).
     \item \textbf{Mechanism:} Inserts into the enterocyte outer leaflet, lowering packing order and inducing an $L_o \rightarrow L_d$ phase transition without detergent-like micellar lysis.
 \end{itemize}
 
-\subsection{Component C: Efflux Pump Decoy \\ (Betulinic Acid / Triterpenoid)}
+\subsection{Component C: Efflux Pump Decoy (Betulinic Acid)}
 \begin{itemize}[noitemsep]
     \item \textbf{CAS No.:} 472-15-1
     \item \textbf{Role:} Reversible P-glycoprotein (ABCB1) substrate inhibitor.
@@ -133,48 +142,66 @@ We mapped this exact rhizosphere contact mechanic to the lipid headgroups and ca
 
 \section{Pharmaceutical Tableting \& Encapsulation}
 
-\begin{table}[h!]
+\begin{table*}[t!]
 \centering
 \small
-\begin{tabularx}{\columnwidth}{lrr}
-\toprule
-\textbf{Core Ingredient} & \textbf{Mass / Unit} & \textbf{Role} \\
-\midrule
-Therapeutic Peptide (e.g. Semaglutide) & $2.0\text{--}5.0\text{ mg}$ & Active API \\
-Sodium D-Saccharate & $200.0\text{ mg}$ & Calcium Shuttle \\
-Purified Sophorolipid (Acidic Form) & $75.0\text{ mg}$ & Phase Fluidizer \\
-Betulinic Acid (Micronized) & $15.0\text{ mg}$ & Efflux Decoy \\
-Microcrystalline Cellulose (PH-102) & $120.0\text{ mg}$ & Direct Compression \\
-Croscarmellose Sodium & $12.0\text{ mg}$ & Disintegrant \\
-Magnesium Stearate & $4.0\text{ mg}$ & cGMP Lubricant \\
-\midrule
-\textbf{Total Core Tablet Mass} & \textbf{$\approx 428.0\text{ mg}$} & \\
-\bottomrule
+\caption{\textbf{Standard Solid Oral Dosage Tablet Composition (Rhizosphere Matrix)}}
+\vspace{0.15cm}
+\begin{tabularx}{0.9\textwidth}{|l|r|X|}
+\hline
+\rowcolor{tableheader}
+\textbf{Formulation Ingredient} & \textbf{Mass per Tablet (mg)} & \textbf{Functional Biophysical Role} \\
+\hline
+Active Therapeutic Peptide (e.g., Semaglutide) & $2.0\text{--}5.0\text{ mg}$ & Target API (Macro-molecular Peptide) \\
+\hline
+Sodium D-Saccharate (D-Glucarate) & $200.0\text{ mg}$ & Reversible $Ca^{2+}$ Electrostatic De-Stapling Shuttle \\
+\hline
+Purified Fungal Sophorolipid (Acidic Form) & $75.0\text{ mg}$ & Non-Lytic Lipid Bilayer Phase Fluidizer ($L_o \rightarrow L_d$) \\
+\hline
+Betulinic Acid (Micronized Triterpenoid) & $15.0\text{ mg}$ & Reversible P-gp (ABCB1) Efflux Pump Decoy \\
+\hline
+Microcrystalline Cellulose (Avicel PH-102) & $120.0\text{ mg}$ & Direct Compression Matrix Binder \\
+\hline
+Croscarmellose Sodium (Ac-Di-Sol) & $12.0\text{ mg}$ & Superdisintegrant for Rapid Duodenal Release \\
+\hline
+Magnesium Stearate (Vegetable Grade) & $4.0\text{ mg}$ & Hydrophobic Tableting Lubricant \\
+\hline\hline
+\textbf{Total Tablet Core Mass} & \textbf{$\approx 428.0\text{ mg}$} & \textbf{Standard Compressed Oval Solid Tablet} \\
+\hline
 \end{tabularx}
-\end{table}
+\end{table*}
 
 \subsection{Enteric Film Coating Specification}
 The core tablet is sealed with an enteric polymer coating (Eudragit L30D-55 or pharmaceutical-grade Shellac, $8\text{--}12\text{ mg/cm}^2$ coating weight) to resist gastric dissolution ($\text{pH } 1.2\text{--}2.5$) for $>120\text{ min}$, followed by rapid dissolution in the upper small intestine ($\text{pH } \ge 6.2$) within $10\text{--}15\text{ min}$.
 
-\section{In-Silico Simulation Telemetry \\ (Project PRISM Receipts)}
+\section{In-Silico Simulation Telemetry (Project PRISM Receipts)}
 
 Simulations were performed using our proprietary phase-space contact mechanics solver under \textbf{CODENAME PRISM} on an NVIDIA RTX 4050 GPU across a $128\times 128\times 32$ 3D epithelial lattice (524,288 phase-space coordinates).
 
 \begin{table}[h!]
 \centering
 \small
-\begin{tabularx}{\columnwidth}{lrrX}
-\toprule
-\textbf{Time} & \textbf{TEER ($\Omega\cdot\text{cm}^2$)} & \textbf{Phase} & \textbf{Transmitted Drug} \\
-\midrule
-$0\text{ min}$ & $1144.8$ & $L_o$ (Gel) & $0.0008\text{ mg/cm}^2$ (Baseline) \\
-$15\text{ min}$ & $726.8$ & $L_d$ (Fluid) & $0.2437\text{ mg/cm}^2$ ($+2.4\%$) \\
-$30\text{ min}$ & $726.8$ & $L_d$ (Fluid) & $0.5497\text{ mg/cm}^2$ ($+5.5\%$) \\
-$45\text{ min}$ & $1016.0$ & Re-Sealing & $0.6979\text{ mg/cm}^2$ ($+7.0\%$) \\
-$90\text{ min}$ & $1209.2$ & $L_o$ (Locked) & $0.7337\text{ mg/cm}^2$ ($+7.3\%$) \\
-$120\text{ min}$ & $1209.2$ & $L_o$ (Locked) & $0.7578\text{ mg/cm}^2$ ($+7.6\%$) \\
-$180\text{ min}$ & $1209.2$ & $L_o$ (Locked) & $0.8057\text{ mg/cm}^2$ ($+8.1\%$) \\
-\bottomrule
+\caption{\textbf{180-Minute Permeation Kinetics}}
+\vspace{0.15cm}
+\begin{tabularx}{\columnwidth}{|l|r|c|r|}
+\hline
+\rowcolor{tableheader}
+\textbf{Time} & \textbf{TEER} & \textbf{Phase} & \textbf{Transmitted} \\
+\hline
+$0\text{ min}$ & $1145\ \Omega\cdot\text{cm}^2$ & $L_o$ (Gel) & $0.0008\text{ mg/cm}^2$ \\
+\hline
+$15\text{ min}$ & $727\ \Omega\cdot\text{cm}^2$ & $L_d$ (Fluid) & $0.2437\text{ mg/cm}^2$ \\
+\hline
+$30\text{ min}$ & $727\ \Omega\cdot\text{cm}^2$ & $L_d$ (Fluid) & $0.5497\text{ mg/cm}^2$ \\
+\hline
+$45\text{ min}$ & $1016\ \Omega\cdot\text{cm}^2$ & Re-Seal & $0.6979\text{ mg/cm}^2$ \\
+\hline
+$90\text{ min}$ & $1209\ \Omega\cdot\text{cm}^2$ & $L_o$ (Lock) & $0.7337\text{ mg/cm}^2$ \\
+\hline
+$120\text{ min}$ & $1209\ \Omega\cdot\text{cm}^2$ & $L_o$ (Lock) & $0.7578\text{ mg/cm}^2$ \\
+\hline
+$180\text{ min}$ & $1209\ \Omega\cdot\text{cm}^2$ & $L_o$ (Lock) & $0.8057\text{ mg/cm}^2$ \\
+\hline
 \end{tabularx}
 \end{table}
 
@@ -190,14 +217,14 @@ $180\text{ min}$ & $1209.2$ & $L_o$ (Locked) & $0.8057\text{ mg/cm}^2$ ($+8.1\%$
 
 To enable independent verification by university and pharmaceutical research laboratories, we outline the exact in-vitro and ex-vivo protocol:
 
-\subsection{1. Caco-2 / HT29-MTX Co-Culture Model}
+\subsection{Caco-2 / HT29-MTX Co-Culture Model}
 \begin{enumerate}[noitemsep]
     \item Seed Caco-2 and HT29-MTX-E12 cells at a $9:1$ ratio onto Transwell polyester membrane inserts ($0.4\ \mu\text{m}$ pore size, $12\text{ mm}$ diameter, Costar 3460) at a density of $1.0\times 10^5\text{ cells/cm}^2$.
     \item Culture for 21 days in DMEM ($4.5\text{ g/L}$ glucose, $10\%$ FBS, $1\%$ NEAA) at $37^\circ\text{C}$ / $5\%\ CO_2$, replacing media every 48 hours.
     \item Confirm baseline monolayer integrity: initial TEER must exceed $1,000\ \Omega\cdot\text{cm}^2$.
 \end{enumerate}
 
-\subsection{2. Transepithelial Transport \& TEER Kinetics}
+\subsection{Transepithelial Transport \& TEER Kinetics}
 \begin{enumerate}[noitemsep]
     \item Equilibrate cell monolayers in pre-warmed Krebs-Ringer buffer (KRB, pH 6.8 apical, pH 7.4 basolateral) for 30 minutes.
     \item Add formulation test group to apical chamber: (A) Sodium D-Saccharate ($2.5\text{ mM}$), (B) Sophorolipid ($0.75\text{ mg/mL}$), (C) Betulinic Acid ($0.1\text{ mM}$), and (D) FITC-Dextran 4 kDa ($1.0\text{ mg/mL}$) or human insulin ($100\ \mu\text{g/mL}$).
@@ -207,7 +234,7 @@ To enable independent verification by university and pharmaceutical research lab
     $$P_{\text{app}} = \frac{dQ/dt}{A \cdot C_0} \quad [\text{cm/s}]$$
 \end{enumerate}
 
-\subsection{3. Cytotoxicity \& Viability Assays}
+\subsection{Cytotoxicity \& Viability Assays}
 \begin{enumerate}[noitemsep]
     \item \textbf{LDH Release:} Collect apical media at $T = 180\text{ min}$ and quantify lactate dehydrogenase leakage (Promega CytoTox 96). Cytotoxicity must remain $<3.0\%$.
     \item \textbf{MTT Cell Viability:} Incubate cells with $0.5\text{ mg/mL}$ MTT reagent for 3 hours; solubilize formazan crystals in DMSO and read absorbance at $570\text{ nm}$. Viability must exceed $95\%$.
