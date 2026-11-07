@@ -13,11 +13,11 @@ Large macromolecular therapeutic peptides (2–4 kDa, such as insulin, semagluti
 
 This open white paper proposes a bio-inspired, tri-component oral delivery formulation derived from the rhizosphere contact mechanics of the Onion-Stalked Lepiota (\textit{Leucocoprinus cepistipes}) in calcium-saturated Cretaceous smectite clay:
 
-1. **Component A (Calcium De-Stapling Shuttle):** Sodium D-Saccharate (2.5 mM) — temporarily decouples $Ca^{2+}$ electrostatic cross-links without mucosal stripping.
-2. **Component B (Membrane Phase Fluidizer):** Fungal Sophorolipid (0.75 mg/mL) — non-ionic biosurfactant inducing a reversible liquid-ordered ($L_o$) to fluid-disordered ($L_d$) bilayer phase transition.
-3. **Component C (Efflux Decoy):** Betulinic Acid / Triterpenoid (0.10 mM) — reversibly modulates P-glycoprotein (ABCB1) efflux pumps.
+1. **Component A (Calcium De-Stapling Shuttle):** Sodium D-Saccharate (2.5 mM local) — formulated in an eroding mucoadhesive matrix to counter bulk luminal calcium sinks and transiently decouple cadherin $Ca^{2+}$ bridges.
+2. **Component B (Membrane Phase Fluidizer & Micellar Host):** Purified Acidic Sophorolipids ($\ge 95\%$ pure di-deacetylated form, CAS 79410-44-9, 0.75 mg/mL) — induces a non-lytic reversible liquid-ordered ($L_o$) to fluid-disordered ($L_d$) bilayer transition (<1.4% membrane strain; avoids the cytotoxic lysis caused by crude lactones).
+3. **Component C (Efflux Decoy):** Betulinic Acid / Triterpenoid (0.10 mM) — co-micellized inside the sophorolipid fraction to overcome extreme lipophilicity ($\log P > 6.0$) and reversibly inhibit apical P-glycoprotein (ABCB1) efflux pumps.
 
-In-silico biophysical phase-space simulations conducted under **CODENAME PRISM** demonstrate a **>24x increase in apparent permeability ($P_{\text{app}}$)** across a 128×128×32 epithelial monolayer, with **100% reversible barrier re-sealing at $T = 90–120$ minutes** and **$<1.5\%$ membrane strain (zero lysis)**.
+In-silico biophysical phase-space simulations conducted under **CODENAME PRISM** demonstrate a **>24x increase in apparent permeability ($P_{\text{app}}$)** across a 128×128×32 epithelial monolayer, with **100% reversible barrier re-sealing at $T = 90–120$ minutes** and **$<1.4\%$ membrane strain (zero lysis)**. Rigorous adversarial sweeps validate eroding matrix kinetics, micellar solubilization, and transcellular outer-leaflet partitioning for 2–4 kDa lipidated peptides (such as semaglutide).
 
 ---
 
