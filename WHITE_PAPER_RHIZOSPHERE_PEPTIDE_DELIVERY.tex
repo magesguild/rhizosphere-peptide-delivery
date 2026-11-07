@@ -205,6 +205,9 @@ Magnesium Stearate (Vegetable Grade) & $3.0\text{ mg}$ & Tablet Punch Tooling Lu
 \end{tabularx}
 \end{table*}
 
+\subsection{Co-Micellization \& Granulation Processing Sequence}
+To yield free-flowing, compressible granules suitable for rotary tablet tooling while preventing crystalline phase-separation of betulinic acid ($\log P > 6.0$), the acidic sophorolipid and betulinic acid co-micellar complex is prepared in an aqueous-ethanolic solution ($>6\times\text{ CMC}$) and rapidly converted into an \textbf{Amorphous Solid Dispersion (ASD)} via \textbf{spray-drying or flash lyophilization onto the microcrystalline cellulose (Avicel PH-102)} carrier bed. Slow oven tray-drying must be strictly avoided, as extended evaporation allows triterpenoid nucleation and recrystallization, which destroys micellar reconstitution. The dry ASD granules are subsequently blended with sodium D-saccharate, the eroding polymer matrix former (HPMC K4M / Carbopol 974P), superdisintegrant, and lubricant prior to die compression.
+
 \subsection{Enteric Coating Specification}
 Core tablets are film-coated with an enteric polymer (Eudragit L30D-55, $8\text{--}12\text{ mg/cm}^2$) ensuring gastric resistance at $\text{pH } 1.2\text{--}2.5$ for $>120\text{ min}$, followed by targeted erosion in the proximal jejunum ($\text{pH } \ge 6.2$) within $10\text{--}15\text{ min}$.
 
@@ -252,16 +255,17 @@ Simulations were executed across 524,288 phase-space coordinates on an NVIDIA RT
 
 \subsection{Transepithelial Permeation Assay}
 \begin{enumerate}[noitemsep]
-    \item Equilibrate monolayers in Krebs-Ringer buffer (pH 6.8 apical, pH 7.4 basolateral) with apical $[Ca^{2+}] = 0.5\text{ mM}$.
+    \item Equilibrate monolayers in pre-warmed Krebs-Ringer buffer (KRB, pH 6.8 apical, pH 7.4 basolateral). \textbf{Boundary Layer Microclimate Note:} In vivo, the eroding matrix maintains $25\text{--}30\text{ mM}$ local saccharate directly against the unstirred mucosal water layer under normal physiological $Ca^{2+}$ ($1.25\text{--}1.8\text{ mM}$). In Transwell systems where apical fluid volume ($0.5\text{--}1.0\text{ mL}$) is large relative to cell surface area, technicians should either apply the formulation as a localized micro-deposit close to the monolayer, or adjust apical bath $Ca^{2+}$ to $0.5\text{ mM}$ (by supplementing calcium-free KRB) to accurately model interfacial boundary-layer chelation kinetics without inducing bulk-dilution artifacts.
     \item Prepare apical test stock: (A) Sodium D-Saccharate ($2.5\text{ mM}$), (B) Pre-micellized Acidic Sophorolipid ($0.75\text{ mg/mL}$) carrying Betulinic Acid ($0.10\text{ mM}$), and (C) Rhodamine-labeled Semaglutide or FITC-Dextran 4 kDa ($1.0\text{ mg/mL}$).
     \item Record TEER at $T = 0, 15, 30, 45, 60, 90, 120, 180\text{ min}$ via EVOM3.
     \item Sample basolateral buffer at each time point, quantifying peptide flux via RP-HPLC and fluorescence spectroscopy.
 \end{enumerate}
 
-\subsection{Imaging \& Toxicity Quality Controls}
+\subsection{Imaging, Toxicity \& Transport Route Controls}
 \begin{enumerate}[noitemsep]
     \item \textbf{Confocal Microscopy:} Fix Transwell membranes at $T=45\text{ min}$ in $4\%$ PFA; image on a Leica SP8 confocal microscope ($63\times$ oil objective, z-stack $0.3\ \mu\text{m}$ steps) to quantify intracellular cytosolic versus junctional fluorescence.
     \item \textbf{LDH Leakage:} Quantify apical LDH at $T=180\text{ min}$ (Promega CytoTox 96). Cytotoxicity must remain $<3.0\%$.
+    \item \textbf{Transport Route Discrimination (Passive vs. Endocytic):} Rather than chilling cultures to $4^\circ\text{C}$ (which dramatically increases lipid bilayer viscosity and thermally arrests passive lateral and transbilayer diffusion independent of endocytosis), laboratories should evaluate passive vs. active transcytosis at physiological temperature ($37^\circ\text{C}$) using metabolic ATP-depletion controls ($10\text{ mM}$ sodium azide / $50\text{ mM}$ 2-deoxyglucose) or specific pharmacological endocytic inhibitors (e.g., $10\ \mu\text{M}$ chlorpromazine, $80\ \mu\text{M}$ dynasore). Transbilayer $L_d$ passive partitioning persists under ATP depletion, confirming non-vesicular biophysical permeation.
 \end{enumerate}
 
 \section{Conclusion}
